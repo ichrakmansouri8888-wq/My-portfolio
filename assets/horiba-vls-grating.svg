@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" role="img" aria-labelledby="t d">
+  <title id="t">Two-beam holographic recording of a variable line spacing (VLS) grating</title>
+  <desc id="d">Two coherent recording beams intersect on a substrate, writing a diffraction grating whose line spacing increases from left to right.</desc>
+  <rect x="0" y="0" width="600" height="300" fill="#f4f4f2"/>
+
+  <!-- substrate -->
+  <rect x="70" y="222" width="460" height="16" rx="2" fill="#d7d7d2" stroke="#9a9a92" stroke-width="1"/>
+  <text x="300" y="266" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="12" fill="#5b5b54">recording substrate</text>
+
+  <!-- grating ticks: variable line spacing, denser on the left -->
+  <g stroke="#2a2a24" stroke-width="1.6">
+    <!-- generated with increasing pitch -->
+    <line x1="82" y1="216" x2="82" y2="230"/>
+    <line x1="90" y1="216" x2="90" y2="230"/>
+    <line x1="99" y1="216" x2="99" y2="230"/>
+    <line x1="109" y1="216" x2="109" y2="230"/>
+    <line x1="120" y1="216" x2="120" y2="230"/>
+    <line x1="132" y1="216" x2="132" y2="230"/>
+    <line x1="145" y1="216" x2="145" y2="230"/>
+    <line x1="159" y1="216" x2="159" y2="230"/>
+    <line x1="174" y1="216" x2="174" y2="230"/>
+    <line x1="190" y1="216" x2="190" y2="230"/>
+    <line x1="207" y1="216" x2="207" y2="230"/>
+    <line x1="225" y1="216" x2="225" y2="230"/>
+    <line x1="244" y1="216" x2="244" y2="230"/>
+    <line x1="264" y1="216" x2="264" y2="230"/>
+    <line x1="285" y1="216" x2="285" y2="230"/>
+    <line x1="307" y1="216" x2="307" y2="230"/>
+    <line x1="330" y1="216" x2="330" y2="230"/>
+    <line x1="354" y1="216" x2="354" y2="230"/>
+    <line x1="379" y1="216" x2="379" y2="230"/>
+    <line x1="405" y1="216" x2="405" y2="230"/>
+    <line x1="432" y1="216" x2="432" y2="230"/>
+    <line x1="460" y1="216" x2="460" y2="230"/>
+    <line x1="489" y1="216" x2="489" y2="230"/>
+    <line x1="519" y1="216" x2="519" y2="230"/>
+  </g>
+  <text x="82" y="204" font-family="IBM Plex Mono, monospace" font-size="11" fill="#5b5b54">tight pitch</text>
+  <text x="519" y="204" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="11" fill="#5b5b54">wide pitch</text>
+
+  <!-- recording beam 1 (red, He-Ne-like) -->
+  <line x1="40" y1="28" x2="298" y2="220" stroke="#c8402f" stroke-width="2.2"/>
+  <circle cx="40" cy="28" r="4" fill="#c8402f"/>
+  <text x="30" y="18" font-family="Archivo, sans-serif" font-size="12" font-weight="600" fill="#c8402f">Recording beam 1</text>
+
+  <!-- recording beam 2 (green, Nd:YAG-like) -->
+  <line x1="560" y1="28" x2="302" y2="220" stroke="#2f8f5f" stroke-width="2.2"/>
+  <circle cx="560" cy="28" r="4" fill="#2f8f5f"/>
+  <text x="570" y="18" text-anchor="end" font-family="Archivo, sans-serif" font-size="12" font-weight="600" fill="#2f8f5f">Recording beam 2</text>
+
+  <!-- interference / intersection glow -->
+  <circle cx="300" cy="220" r="7" fill="none" stroke="#2a2a24" stroke-width="1"/>
+  <text x="300" y="196" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11" fill="#2a2a24">interference fringes</text>
+</svg>
