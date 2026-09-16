@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cold Rubidium Atoms — Ichrak Mansouri</title>
+<meta name="description" content="Project detail — automated time-of-flight characterization of a cloud of cold rubidium atoms, Institut d'Optique.">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+
+  <a class="back-link" href="../index.html">← Ichrak Mansouri — Portfolio</a>
+
+  <div class="project detail">
+    <div class="project-head">
+      <span class="project-num">04 — TEAM PROJECT</span>
+      <span class="project-date mono">2024 – 2025</span>
+    </div>
+    <h3>Automated Characterization of a Cloud of Cold Rubidium Atoms</h3>
+    <div class="org">Institut d'Optique</div>
+
+    <p class="desc">A magneto-optical trap cools and confines rubidium atoms with laser light alone: a beam tuned slightly below an atomic transition slows any atom moving toward it through the Doppler effect, and a magnetic-field gradient turns that into a real spatial trap through Zeeman shifting. The goal was twofold: rebuild a cold rubidium cloud on top of a previous year's setup, with better laser locking and a reorganized optical table, then characterize it quantitatively, its temperature and density, through time-of-flight absorption imaging.</p>
+
+    <p class="desc" style="margin-top:26px;">Four things had to come together to make a real measurement: two lasers locked the right way, a trap with the right field and polarization, a frequency doubler that could survive contact with the rest of the table, and a fully automated way to trigger and analyze every shot. Each is broken out below.</p>
+
+    <div class="fab-stepper">
+      <div class="fab-tabs" role="tablist">
+        <button class="fab-tab active" data-step="1"><span class="fab-tab-num">01</span>Laser Locking &amp; Trapping</button>
+        <button class="fab-tab" data-step="2"><span class="fab-tab-num">02</span>PPLN Failure &amp; Rebuild</button>
+        <button class="fab-tab" data-step="3"><span class="fab-tab-num">03</span>Automated Sequencing</button>
+        <button class="fab-tab" data-step="4"><span class="fab-tab-num">04</span>Data Acquisition &amp; Analysis</button>
+      </div>
+
+      <div class="fab-stage">
+        <div class="fab-panel active" data-step="1">
+          <div class="fab-panel-head">
+            <span class="fab-panel-num">01</span>
+            <h4 class="fab-panel-title">Laser Locking &amp; Trapping</h4>
+          </div>
+          <div class="fab-carousel">
+            <div class="fab-carousel-stage">
+              <button type="button" class="fab-carousel-arrow prev" aria-label="Previous picture">‹</button>
+              <div class="fab-carousel-slides">
+                <figure class="fab-carousel-slide active">
+                  <img src="../assets/cold atom table schematic.png" alt="Photo of the optical table with pump, cooling and imaging beam paths traced in color, next to a hand-drawn schematic of the same beam paths." loading="lazy">
+                  <figcaption>The finished table, pump (green), cooling (red) and imaging (blue) beams traced against the hand-drawn beam-path schematic.</figcaption>
+                </figure>
+                <figure class="fab-carousel-slide">
+                  <img src="../assets/cold atoms optical schematic.png" alt="Principle schematic of the optical setup, showing the PPLN doubler, AOM, shutters, waveplates, polarizing beamsplitter cubes and the science chamber." loading="lazy">
+                  <figcaption>Principle schematic: PPLN doubler and AOM on the cooling path, repump folded in through its own shutter, both combining at the science chamber.</figcaption>
+                </figure>
+                <figure class="fab-carousel-slide">
+                  <img src="../assets/cold atoms spectroscopy scope.png" alt="Oscilloscope trace of the saturated absorption spectroscopy signal used to lock the repump laser." loading="lazy">
+                  <figcaption>Saturated absorption spectroscopy on the oscilloscope, the Doppler-broadened dip the repump lock derives its error signal from.</figcaption>
+                </figure>
+              </div>
+              <button type="button" class="fab-carousel-arrow next" aria-label="Next picture">›</button>
+            </div>
+            <div class="fab-carousel-counter">1 / 3</div>
+          </div>
+          <p class="fab-caption"><b>Two lasers, two lock schemes : </b> I locked the repump laser first, using saturated absorption spectroscopy on the rubidium spectrum and a modulation based dispersion technique to build an error signal, then held it at the transition's zero crossing with a PID. The cooling laser came next, locked instead to the beat frequency between the two beams, servoed to a target detuning of 1.48 GHz. The trapping field itself came from two coils in an anti-Helmholtz configuration at 3 A, and circular polarization on each beam arm, verified against an ellipticity above 39 on a polarization analyzer, gave the correct angular momentum selection rules for trapping.</p>
+        </div>
+
+        <div class="fab-panel" data-step="2">
+          <div class="fab-panel-head">
+            <span class="fab-panel-num">02</span>
+            <h4 class="fab-panel-title">PPLN Failure &amp; Rebuild</h4>
+          </div>
+          <div class="fab-carousel">
+            <div class="fab-carousel-stage">
+              <button type="button" class="fab-carousel-arrow prev" aria-label="Previous picture">‹</button>
+              <div class="fab-carousel-slides">
+                <figure class="fab-carousel-slide active">
+                  <img src="../assets/cold atoms ppln table.png" alt="Photo of the optical table during the rebuild, showing the PPLN driver and controller box." loading="lazy">
+                  <figcaption>The table mid-rebuild, PPLN driver and controller at left, after the doubler failure forced a full reorganization.</figcaption>
+                </figure>
+                <figure class="fab-carousel-slide">
+                  <img src="../assets/cold atoms ppln cad.png" alt="SolidWorks technical drawing of the custom protective housing designed for the PPLN doubler." loading="lazy">
+                  <figcaption>My SolidWorks drawing for the PPLN's new protective housing, isolating it from routine adjustments elsewhere on the table.</figcaption>
+                </figure>
+                <figure class="fab-carousel-slide">
+                  <img src="../assets/cold atoms beam waist fit.png" alt="Two erf-function fits to the cumulative transverse intensity profile of the doubled beam, measured by knife-edge at 56 cm and 80 cm." loading="lazy">
+                  <figcaption>Re-characterizing the doubled beam after the rebuild, erf fits to the knife-edge profile at 56 cm and 80 cm to recover the new waist.</figcaption>
+                </figure>
+              </div>
+              <button type="button" class="fab-carousel-arrow next" aria-label="Next picture">›</button>
+            </div>
+            <div class="fab-carousel-counter">1 / 3</div>
+          </div>
+          <p class="fab-caption"><b>Diagnosis, redesign, re-characterization : </b> Partway through the project, the PPLN crystal that doubles our cooling laser's frequency failed and stopped the experiment. I diagnosed the failure, then designed a dedicated, temperature-controlled protective housing for the doubler in SolidWorks, isolated from the rest of the table so a routine adjustment elsewhere could never damage it again. Once it was back in place, I re-characterized its output beam from scratch, fitting the transverse intensity profile with an erf function at two distances to confirm the mode was still a clean Gaussian and recover its new waist, before folding it back into a reorganized table with room for the imaging line that was wanted to be added from the start.</p>
+        </div>
+
+        <div class="fab-panel" data-step="3">
+          <div class="fab-panel-head">
+            <span class="fab-panel-num">03</span>
+            <h4 class="fab-panel-title">Automated Sequencing</h4>
+          </div>
+          <div class="fab-carousel">
+            <div class="fab-carousel-stage">
+              <button type="button" class="fab-carousel-arrow prev" aria-label="Previous picture">‹</button>
+              <div class="fab-carousel-slides">
+                <figure class="fab-carousel-slide active">
+                  <img src="../assets/cold atoms arduino block.png" alt="Block diagram of the Arduino DUE fanning out trigger lines to four Arduino UNOs, each driving one component: two shutters, the AOM driver and the camera." loading="lazy">
+                  <figcaption>The trigger architecture I designed: one DUE fanning out to four UNOs, each dedicated to one component.</figcaption>
+                </figure>
+                <figure class="fab-carousel-slide">
+                  <img src="../assets/cold atoms arduino breadboard.png" alt="Hand-annotated breadboard diagram of the DUE-to-UNO trigger line, with a pull-up resistor and shared ground reference." loading="lazy">
+                  <figcaption>Breadboard-level detail of the DUE-to-UNO trigger line, debounced through a 10 kΩ pull-up on a shared ground.</figcaption>
+                </figure>
+                <figure class="fab-carousel-slide">
+                  <img src="../assets/cold atoms i2c alt.png" alt="Wiring diagram of an I2C bus topology, with SDA and SCL lines and pull-up resistors, connecting the Arduino DUE to three Arduino UNOs." loading="lazy">
+                  <figcaption>An I2C bus was considered as an alternative, SDA/SCL open-drain lines with pull-ups, before we settled on simpler dedicated trigger lines.</figcaption>
+                </figure>
+              </div>
+              <button type="button" class="fab-carousel-arrow next" aria-label="Next picture">›</button>
+            </div>
+            <div class="fab-carousel-counter">1 / 3</div>
+          </div>
+          <p class="fab-caption"><b>One brain, four dedicated slaves : </b> Each time-of-flight data point needs a freshly recreated cloud, released and imaged at a precise, independently chosen delay. I built a trigger architecture around one Arduino DUE acting as the brain, fanning out to four Arduino UNOs, one each for two shutters, the AOM driver and the camera, sequencing the whole cool, release, wait, image cycle to microsecond precision no one could reproduce by hand. I considered an I2C bus for the same job, but kept the simpler dedicated trigger lines once they proved more reliable on the bench.</p>
+        </div>
+
+        <div class="fab-panel" data-step="4">
+          <div class="fab-panel-head">
+            <span class="fab-panel-num">04</span>
+            <h4 class="fab-panel-title">Data Acquisition &amp; Analysis</h4>
+          </div>
+          <div class="fab-carousel">
+            <div class="fab-carousel-stage">
+              <button type="button" class="fab-carousel-arrow prev" aria-label="Previous picture">‹</button>
+              <div class="fab-carousel-slides">
+                <figure class="fab-carousel-slide active">
+                  <img src="../assets/cold atoms analyzer gui.png" alt="Screenshot of the Image Line Analyzer, a custom Python and Tkinter tool, showing an absorption image with stored intensity profiles." loading="lazy">
+                  <figcaption>Image Line Analyzer, the Python/Tkinter tool I built to extract and store line profiles from absorption images.</figcaption>
+                </figure>
+                <figure class="fab-carousel-slide">
+                  <img src="../assets/cold atoms profile fit.png" alt="Vertical and horizontal intensity profiles extracted from a synthetic test image, used to validate the analyzer's line extraction." loading="lazy">
+                  <figcaption>Vertical and horizontal profiles through a synthetic test image, used to validate the analyzer before trusting it on real data.</figcaption>
+                </figure>
+                <figure class="fab-carousel-slide">
+                  <img src="../assets/cold atoms tof synthetic.png" alt="Four synthetically generated Gaussian transmission images simulating a cold-atom cloud expanding over 0, 5, 10 and 15 milliseconds." loading="lazy">
+                  <figcaption>Synthetically generated Gaussian clouds simulating expansion over time, the validation set behind the temperature-fitting pipeline.</figcaption>
+                </figure>
+              </div>
+              <button type="button" class="fab-carousel-arrow next" aria-label="Next picture">›</button>
+            </div>
+            <div class="fab-carousel-counter">1 / 3</div>
+          </div>
+          <p class="fab-caption"><b>From pixels to temperature : </b> I wrote a Python and Tkinter tool, the Image Line Analyzer, that pulls vertical and horizontal intensity profiles out of an absorption image. Fitting how the cloud's width grows with delay time against σ(t)² = (kT/m)t² + σ₀² gives the temperature directly, a pipeline I validated first on synthetically generated Gaussian test images before trusting it on real time-of-flight data.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="stat-strip" style="margin-top:30px;">
+      <span class="stat">Diagnosed &amp; rebuilt the PPLN doubler housing (SolidWorks) after a hardware failure</span>
+      <span class="stat">Beat note laser lock at <b>1.48 GHz</b></span>
+      <span class="stat">Circular polarization, ellipticity <b>&gt; 39</b></span>
+      <span class="stat">Designed the DUE + 4×UNO automated trigger sequencing</span>
+      <span class="stat">Built the Python/Tkinter Image Line Analyzer</span>
+    </div>
+    <div class="chips">
+      <span class="chip">laser locking</span><span class="chip">saturated absorption spectroscopy</span><span class="chip">beat-note frequency locking</span><span class="chip">magneto-optical trap</span><span class="chip">absorption imaging</span><span class="chip">time-of-flight thermometry</span><span class="chip">polarization control</span><span class="chip">Arduino</span><span class="chip">Python</span><span class="chip">SolidWorks</span><span class="chip">optical-table design</span>
+    </div>
+  </div>
+
+  <a class="back-link" href="../index.html" style="margin-bottom:60px;">← Back to all projects</a>
+
+</div>
+
+<script>
+(function(){
+  document.querySelectorAll('.fab-stepper').forEach(function(stepper){
+    var tabs = stepper.querySelectorAll('.fab-tab');
+    var panels = stepper.querySelectorAll('.fab-panel');
+    tabs.forEach(function(tab){
+      tab.addEventListener('click', function(){
+        var step = tab.getAttribute('data-step');
+        tabs.forEach(function(t){ t.classList.toggle('active', t === tab); });
+        panels.forEach(function(p){ p.classList.toggle('active', p.getAttribute('data-step') === step); });
+      });
+    });
+  });
+
+  document.querySelectorAll('.fab-carousel').forEach(function(carousel){
+    var slides = carousel.querySelectorAll('.fab-carousel-slide');
+    var counter = carousel.querySelector('.fab-carousel-counter');
+    var prevBtn = carousel.querySelector('.fab-carousel-arrow.prev');
+    var nextBtn = carousel.querySelector('.fab-carousel-arrow.next');
+    var index = 0;
+    function render(){
+      slides.forEach(function(s, i){ s.classList.toggle('active', i === index); });
+      if (counter) counter.textContent = (index + 1) + ' / ' + slides.length;
+    }
+    prevBtn.addEventListener('click', function(){
+      index = (index - 1 + slides.length) % slides.length;
+      render();
+    });
+    nextBtn.addEventListener('click', function(){
+      index = (index + 1) % slides.length;
+      render();
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
