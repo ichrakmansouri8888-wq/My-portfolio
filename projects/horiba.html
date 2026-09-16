@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VLS Grating Optimization — Ichrak Mansouri</title>
+<meta name="description" content="Project detail — holographic VLS diffraction grating optimization algorithm, HORIBA France SAS.">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+
+  <a class="back-link" href="../index.html">← Ichrak Mansouri — Portfolio</a>
+
+  <div class="project detail">
+    <div class="project-head">
+      <span class="project-num">02 — INDUSTRY INTERNSHIP</span>
+      <span class="project-date mono">2025</span>
+    </div>
+    <h3>Holographic VLS Grating Optimization</h3>
+    <div class="org">HORIBA France SAS</div>
+
+    <p class="desc">Variable Line Spacing (VLS) diffraction gratings are recorded holographically, with two coherent beams interfering on a photoresist coated substrate to write the line pattern. My internship was to compare the line density that comes out of a real two beam recording configuration against the theoretical density defined by a target polynomial law, and build a tool that could optimize the recording setup to close that gap.</p>
+
+    <figure class="figure" style="max-width:500px; margin-left:auto; margin-right:auto;">
+      <img src="../assets/horiba.png" alt="Diagram of two coherent point sources C and D interfering on a photoresist coated substrate, producing the fringe pattern that records a VLS diffraction grating." loading="lazy">
+      <figcaption class="figure-cap">Two coherent sources, C and D, interfering on the photoresist. The fringe pattern they write is the grating.</figcaption>
+    </figure>
+
+    <p class="desc" style="margin-top:26px;">There was no existing method for this, so I defined the merit function myself, tested and compared several optimization algorithms for robustness in a parameter space where small variations mattered a lot, and validated every step against theoretical values before trusting the result.</p>
+
+    <p class="desc" style="margin-top:26px;">Partway through the internship, I identified that MATLAB's missing optimization toolbox was going to limit what the tool could do, and proposed migrating the entire codebase to Python. I then owned that migration myself, rewriting every function around portability, readability and performance instead of porting it line by line. I also built the tool's visualization layer, rendering the VLS recording setup itself with its optical elements and ray paths, the resulting line shapes across the grating, tolerancing of the recording arm parameters, and the polynomial fit used to extract the density coefficients. The result is a numerical tool HORIBA is currently using directly for actual holography and optical design work.</p>
+
+    <div class="chips">
+      <span class="chip">MATLAB</span><span class="chip">Python</span><span class="chip">optimization algorithms</span><span class="chip">holographic recording</span><span class="chip">VLS diffraction gratings</span><span class="chip">scientific visualization</span>
+    </div>
+  </div>
+
+  <a class="back-link" href="../index.html" style="margin-bottom:60px;">← Back to all projects</a>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Graphene Thermal Rectifiers — Ichrak Mansouri</title>
+<meta name="description" content="Project detail — supported-graphene nanoscale thermal rectifiers, MPQ Laboratory (CNRS).">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+
+  <a class="back-link" href="../index.html">← Ichrak Mansouri — Portfolio</a>
+
+  <div class="project detail">
+    <div class="project-head">
+      <span class="project-num">01 — CNRS RESEARCH INTERNSHIP</span>
+      <span class="project-date mono">MAR 2026 – AUG 2026</span>
+    </div>
+    <h3>Supported-Graphene Nanoscale Thermal Rectifiers</h3>
+    <div class="org">MPQ Laboratory, CNRS / Université Paris Cité</div>
+
+    <p class="desc">Heat dissipation is quickly becoming one of the harder limits on how densely modern devices can be packed, which is exactly why thermal rectifiers, components that conduct heat differently depending on direction, the thermal equivalent of a diode, are worth building. The usual way to measure how well one works is to compare how much heat flows one way against the other, but that definition assumes heat spreads evenly through the device, which holds for the suspended, free-standing graphene most published work studies. Real devices sit on a substrate, so I built and measured a supported version instead, and worked out a new way to define thermal rectification, based on conductance, that accounts for the heat continuously leaking into the substrate underneath.</p>
+    
+    <figure class="figure" style="max-width:600px; margin-left:auto; margin-right:auto;">
+      <img src="../assets/mpq-device-3Dschematic.png" alt="Schematic of the graphene/hBN device: substrate, hBN flake, graphene flake, Pt microheaters and Au thermometers." loading="lazy">
+      <figcaption class="figure-cap">Device schematic : graphene/hBN heterostructure with Pt microheaters and Au thermometers</figcaption>
+    </figure>
+
+    <div class="figure-grid">
+      <figure class="figure">
+        <img src="../assets/mpq-device-2Dschematic.png" alt="Top-down diagram of the channel showing the hBN flake and the nanomeshed graphene region." loading="lazy">
+        <figcaption class="figure-cap">Top view : the nanomeshed third of the channel (GNNM) sits between the two microheaters, on the pristine hBN flake</figcaption>
+      </figure>
+      <figure class="figure">
+        <img src="../assets/Device-OM.jpg" alt="Optical micrograph of the finished graphene/hBN device between the two heaters." loading="lazy">
+        <figcaption class="figure-cap">The real device, under the optical microscope: graphene on hBN, contacted and ready to measure</figcaption>
+      </figure>
+    </div>
+
+    <p class="desc">The device itself is a multilayer graphene/hBN heterostructure built on a Si/SiO₂ substrate (500 nm oxide). A ~20 nm hBN flake is transferred first, acting as an electrically insulating layer that preserves graphene's thermal properties while providing mechanical support; a 3–7 nm multilayer graphene flake goes on top of that. Heat is injected with two Pt microheaters (~22 µm long, 50 nm thick, ~9 µm apart) and read out with two Au nanowire thermometers (~7 µm long, 75 nm thick) on either side of the channel (deliberately short, to minimize temperature variation along each thermometer and thus ensure precise temperature measurements). The device is geometrically symmetric by design, so that any measured rectification can be attributed to the engineered asymmetry (a partially nanomeshed region covering roughly one-third of the graphene channel) rather than to fabrication imperfections.</p>
+
+    <p class="desc">I fabricated 36 samples with different configurations of the device myself, each one through six stages from bare substrate to finished device:</p>
+
+    <div class="fab-stepper">
+    <div class="fab-tabs" role="tablist">
+      <button class="fab-tab active" data-step="1"><span class="fab-tab-num"></span>Contacts &amp; Pt Microheaters</button>
+      <button class="fab-tab" data-step="2"><span class="fab-tab-num"></span>2D Materials Transfer</button>
+      <button class="fab-tab" data-step="3"><span class="fab-tab-num"></span>Flake Thickness Measurement</button>
+      <button class="fab-tab" data-step="4"><span class="fab-tab-num"></span>hBN Flake Reshaping</button>
+      <button class="fab-tab" data-step="5"><span class="fab-tab-num"></span>Au Thermometers</button>
+      <button class="fab-tab" data-step="6"><span class="fab-tab-num"></span>Graphene Flake Reshaping &amp; Nanomeshing</button>
+    </div>
+
+    <div class="fab-stage">
+      <div class="fab-panel active" data-step="1">
+        <div class="fab-panel-head">
+          <span class="fab-panel-num">01</span>
+          <h4 class="fab-panel-title">Contacts &amp; Heaters</h4>
+        </div>
+        <div class="fab-carousel">
+          <div class="fab-carousel-stage">
+            <button type="button" class="fab-carousel-arrow prev" aria-label="Previous picture">‹</button>
+            <div class="fab-carousel-slides">
+              <figure class="fab-carousel-slide active" style="max-width:600px; margin-left:auto; margin-right:auto;">
+                <img src="../assets/mask_evap.png" alt="GDSII layout of the microheater and contact pad design." loading="lazy">
+                <figcaption>The mask design : GDSII layout of the microheaters and contact pads</figcaption>
+              </figure>
+              <figure class="fab-carousel-slide" style="max-width:600px; margin-left:auto; margin-right:auto;">
+                <img src="../assets/Pt zoomed.png" alt="Optical micrograph of the patterned Ti/Pt microheaters and contact pads." loading="lazy">
+                <figcaption>After fabrication : the patterned Pt microheaters, under the optical microscope</figcaption>
+              </figure>
+              <figure class="fab-carousel-slide" style="max-width:400px; margin-left:auto; margin-right:auto;">
+                <img src="../assets/evap_machine.jpeg" alt="PLASSYS e-beam evaporator used to deposit the microheaters." loading="lazy">
+                <figcaption>The PLASSYS e-beam evaporator that deposited them</figcaption>
+              </figure>
+            </div>
+            <button type="button" class="fab-carousel-arrow next" aria-label="Next picture">›</button>
+          </div>
+          <div class="fab-carousel-counter">1 / 3</div>
+        </div>
+        <p class="fab-caption"><b>EBL + 5/45 nm Ti/Pt e-beam evaporation + lift-off : </b> Designed in GDSII, patterned by e-beam lithography, then deposited in the PLASSYS evaporator : the two 22 µm Pt microheaters and their contact pads, ~9 µm apart.</p>
+      </div>
+      
+      <div class="fab-panel" data-step="2">
+        <div class="fab-panel-head">
+          <span class="fab-panel-num">02</span>
+          <h4 class="fab-panel-title">2D Materials Transfer</h4>
+        </div>
+        <div class="fab-carousel">
+          <div class="fab-carousel-stage">
+            <button type="button" class="fab-carousel-arrow prev" aria-label="Previous picture">‹</button>
+            <div class="fab-carousel-slides">
+              <figure class="fab-carousel-slide active" style="max-width:300px; margin-left:auto; margin-right:auto;">
+                <img src="../assets/Mpq step2 exfoliation.jpeg" alt="Gloved hands using tweezers and a swab to handle a flake on a PDMS stamp." loading="lazy">
+                <figcaption>Exfoliation of the 2D material from the bulk material</figcaption>
+              </figure>
+              <figure class="fab-carousel-slide" style="max-width:400px; margin-left:auto; margin-right:auto;">
+                <img src="../assets/Mpq step2 materials.png" alt="Source hBN and graphene crystals next to a ruler, and optical micrographs of the exfoliated flakes at 100 micron scale." loading="lazy">
+                <figcaption>The starting materials : bulk hBN and graphite, and the flakes they exfoliate into.</figcaption>
+              </figure>
+              <figure class="fab-carousel-slide" style="max-width:400px; margin-left:auto; margin-right:auto;">
+                <img src="../assets/Mpq step2 pdms drop.png" alt="PDMS transfer stamp with a droplet-shaped flake, held under a microscope." loading="lazy">
+                <figcaption>PDMS stamp (not yet covered with the PPC solution) used during the dry transfer</figcaption>
+              </figure>
+              <figure class="fab-carousel-slide" style="max-width:300px; margin-left:auto; margin-right:auto;">
+                <img src="../assets/Mpq step2 tranfer station.jpeg" alt="The automated dry-transfer stage, with microscope, sample and mask stages." loading="lazy">
+                <figcaption>The dry transfer stage</figcaption>
+              </figure>
+              <figure class="fab-carousel-slide" style="max-width:300px; margin-left:auto; margin-right:auto;">
+                <img src="../assets/Mpq step2 transfer objectives.jpeg" alt="Close-up of the microscope objective turret positioned over the sample stage." loading="lazy">
+                <figcaption>Close-up : the objective turret above the sample stage</figcaption>
+              </figure>
+              <figure class="fab-carousel-slide" style="max-width:500px; margin-left:auto; margin-right:auto;">
+                <img src="../assets/Mpq step2 hbn transfer.png" alt="Sample under the microscope after the hBN flake has been transferred between the microheaters." loading="lazy">
+                <figcaption>After hBN transfer : the flake dropped in a way to cover the two microheaters</figcaption>
+              </figure>
+              <figure class="fab-carousel-slide" style="max-width:500px; margin-left:auto; margin-right:auto;">
+                <img src="../assets/Mpq step2 gn transfer.png" alt="Sample under the microscope after the graphene flake has been transferred onto the hBN." loading="lazy">
+                <figcaption>After graphene transfer : the completed 2D stack in place</figcaption>
+              </figure>
+            </div>
+            <button type="button" class="fab-carousel-arrow next" aria-label="Next picture">›</button>
+          </div>
+          <div class="fab-carousel-counter" style="max-width:500px; margin-left:auto; margin-right:auto;">1 / 6</div>
+        </div>
+        <p class="fab-caption"><b>Mechanical exfoliation + automated dry transfer : </b> hBN and graphene flakes are exfoliated onto PDMS/PPC stamps, then picked up (while heating the sample holder in the transfer stage to 55 °C)and dropped (precisely melted by heating the sample holder to 110 °C): hBN first, graphene on top precisely covering or at least between the two microheaters using the automated dry-transfer stage.</p>
+      </div>
+      <div class="fab-panel" data-step="3">
+        <div class="fab-panel-head">
+          <span class="fab-panel-num">03</span>
+        <h4 class="fab-panel-title">Flake Thickness Measurement</h4>
+        </div>
+        <div class="fab-images">
+          <img src="../assets/afm rapport.png" alt="Gwyddion AFM topography scan with a height profile and measured step height of about 25 nm." loading="lazy">
+        </div>
+        <p class="fab-caption"><b>AFM (tapping mode) + Gwyddion : </b> Confirms flake thickness before moving on : typically 20–30 nm for hBN and 3–7 nm for graphene.</p>
+      </div>
+      <div class="fab-panel" data-step="4">
+        <div class="fab-panel-head">
+          <span class="fab-panel-num">04</span>
+          <h4 class="fab-panel-title">hBN Flake Reshaping</h4>
+        </div>
+        <div class="fab-carousel">
+          <div class="fab-carousel-stage">
+            <button type="button" class="fab-carousel-arrow prev" aria-label="Previous picture">‹</button>
+            <div class="fab-carousel-slides">
+              <figure class="fab-carousel-slide active" style="max-width:500px; margin-left:auto; margin-right:auto;">
+                <img src="../assets/Mpq step4 gds reshape.png" alt="GDSII layout of the hBN reshaping etch mask over the device." loading="lazy">
+                <figcaption>The mask design : GDSII mask for trimming the hBN into a rectangle.</figcaption>
+              </figure>
+              <figure class="fab-carousel-slide" style="max-width:500px; margin-left:auto; margin-right:auto;">
+                <img src="../assets/reshaping zoomed.png" alt="Optical micrograph of the hBN flake trimmed into a symmetric rectangle between the two heaters." loading="lazy">
+                <figcaption>After etching : the hBN trimmed into a symmetric rectangle.</figcaption>
+              </figure>
+            </div>
+            <button type="button" class="fab-carousel-arrow next" aria-label="Next picture">›</button>
+          </div>
+          <div class="fab-carousel-counter">1 / 2</div>
+        </div>
+        <p class="fab-caption"><b>EBL + SF₆ reactive-ion etching : </b> Trims the hBN into a symmetric rectangle spanning both heaters, so the finished device stays geometrically balanced.</p>
+      </div>
+      <div class="fab-panel" data-step="5">
+        <div class="fab-panel-head">
+          <span class="fab-panel-num">05</span>
+          <h4 class="fab-panel-title">Au Thermometers</h4>
+        </div>
+        <div class="fab-carousel">
+          <div class="fab-carousel-stage">
+            <button type="button" class="fab-carousel-arrow prev" aria-label="Previous picture">‹</button>
+            <div class="fab-carousel-slides">
+              <figure class="fab-carousel-slide active" style="max-width:500px; margin-left:auto; margin-right:auto;">
+                <img src="../assets/Th_mask.png" alt="GDSII layout of the two Au nanowire thermometers on either side of the channel." loading="lazy">
+                <figcaption>The mask design of the Au thermometers.</figcaption>
+              </figure>
+              <figure class="fab-carousel-slide" style="max-width:450px; margin-left:auto; margin-right:auto;">
+                <img src="../assets/thermometers-2.png" alt="Finished device with graphene, hBN, microheaters and Au nanowire thermometers all visible under the microscope." loading="lazy">
+                <figcaption>Device after thermometers deposition under the optical microscope</figcaption>
+              </figure>
+            </div>
+            <button type="button" class="fab-carousel-arrow next" aria-label="Next picture">›</button>
+          </div>
+          <div class="fab-carousel-counter">1 / 2</div>
+        </div>
+        <p class="fab-caption"><b>EBL + 5/75 nm Ti/Au evaporation + lift-off : </b> Two Au nanowire thermometers are patterned directly on the graphene, one on each side of the channel.</p>
+      </div>
+      <div class="fab-panel" data-step="6">
+        <div class="fab-panel-head">
+          <span class="fab-panel-num">06</span>
+          <h4 class="fab-panel-title">Graphene Flake Reshaping &amp; Nanomeshing</h4>
+        </div>
+        <div class="fab-carousel">
+          <div class="fab-carousel-stage">
+            <button type="button" class="fab-carousel-arrow prev" aria-label="Previous picture">‹</button>
+            <div class="fab-carousel-slides">
+              <figure class="fab-carousel-slide active" style="max-width:400px; margin-left:auto; margin-right:auto;">
+                <img src="../assets/raith tool.jpeg" alt="RAITH Pioneer Two system, used here in SEM mode to image the nanomesh." loading="lazy">
+                <figcaption>SEM</figcaption>
+                </figure>
+              <figure class="fab-carousel-slide" style="max-width:450px; margin-left:auto; margin-right:auto;">
+                <img src="../assets/device-SEM.png" alt="SEM close-up of the nanopore array patterned into roughly one-third of the graphene channel." loading="lazy">
+                <figcaption>SEM close-up : the nanopore array</figcaption>
+              </figure>
+              <figure class="fab-carousel-slide" style="max-width:500px; margin-left:auto; margin-right:auto;">
+                <img src="../assets/Test3_h125_d16_01.jpeg" alt="SEM image from the EBL dose test series, with a measured 22 nanometer neck width labeled between adjacent pores." loading="lazy">
+                <figcaption>Dose test : 22 nm neck width, the best of 24 EBL dose tests across four nanomesh designs</figcaption>
+              </figure>
+            </div>
+            <button type="button" class="fab-carousel-arrow next" aria-label="Next picture">›</button>
+          </div>
+          <div class="fab-carousel-counter">1 / 3</div>
+        </div>
+        <p class="fab-caption"><b>High-resolution EBL (CSAR 62) + O₂ plasma : </b> Shapes the graphene channel and patterns a 20–30 nm nanopore array across one-third of it : the engineered asymmetry the whole experiment is built to test. Neck width was tuned via 24 EBL dose tests across four nanomesh designs, landing on 22 nm with the 125 nm design at a dose of 1.6.</p>
+      </div>
+
+    <!-- steps 2–6 go here, each as its own <div class="fab-panel" data-step="2"> ... </div> etc. -->
+
+    </div>
+  </div>
+      
+  <h4 class="fab-panel-title" style="margin:36px 0 14px;">Measurement &amp; Modeling</h4>
+
+  <p class="desc"><b>Electrical measurement : </b> Each Pt microheater can be heated through driving a small current across it, with the driven and "unheated" microheater swapped to measure rectification in both directions. The temperature is measured through the measure of the calibrated Au thermometers' resistance at each end of the graphene flake.</p>
+
+  <div class="fab-carousel" style="margin-top:14px;">
+    <div class="fab-carousel-stage">
+      <button type="button" class="fab-carousel-arrow prev" aria-label="Previous picture">‹</button>
+      <div class="fab-carousel-slides">
+        <figure class="fab-carousel-slide active">
+          <img src="../assets/hfdirection.png" alt="Schematic showing heat flux direction from the driven heater through the channel to the sensing heater." loading="lazy">
+          <figcaption>The idea : heat flows from the "hot" heater (T<sub>H</sub>) to the "cold" heater (T<sub>C</sub>) through the channel.</figcaption>
+        </figure>
+        <figure class="fab-carousel-slide">
+          <img src="../assets/fourprobe.png" alt="Schematic with full four-probe wiring, separate current and voltage leads on each heater." loading="lazy">
+          <figcaption>Four-probe wiring : separate current and voltage leads per thermometer, removing contact resistance from the reading and providing relevant and precise results</figcaption>
+        </figure>
+      </div>
+      <button type="button" class="fab-carousel-arrow next" aria-label="Next picture">›</button>
+    </div>
+    <div class="fab-carousel-counter">1 / 2</div>
+  </div>
+
+  <p class="desc" style="margin-top:26px;"><b>COMSOL modeling : </b> In parallel, I built an electrothermal model of the exact device geometry in COMSOL Multiphysics, to account for heat lost into the substrate and the non-uniform heat flux along the channel, the basis for the conductance-based definition of thermal rectification this internship proposed. The simulated temperature field already hints at the effect: nanomeshing changes the heat-flux profile where the porous region begins. I also used the model to test how making different parts of the device intentionally asymmetric, across several configurations, affected the rectification ratio, which let me refine the design to minimize any asymmetry effect not coming from the nanomeshed graphene itself. Separately, by reproducing the measured curves in simulation, I was able to extract a value for hBN's thermal conductivity that would otherwise be difficult to measure directly.</p>
+  <figure class="figure" style="max-width:500px; margin-left:auto; margin-right:auto;">
+    <img src="../assets/Comsol_portfolio.png" alt="COMSOL 3D geometry of the device, meshed for electrothermal simulation." loading="lazy">
+    <figcaption class="figure-cap">The COMSOL model : device geometry, meshed for electrothermal simulation</figcaption>
+  </figure>
+
+  <div class="figure-grid" style="margin-top:14px; grid-template-columns:1.8fr 2.1fr;">
+    <figure class="figure">
+      <img src="../assets/HFGN.png" alt="COMSOL temperature slice for pristine graphene between microheater and sensor, showing heat spreading smoothly along the channel." loading="lazy">
+      <figcaption class="figure-cap">Pristine graphene : visibly higher heat flux along the channel.</figcaption>
+    </figure>
+    <figure class="figure">
+      <img src="../assets/HFGNNM.png" alt="COMSOL temperature slice for nanomeshed graphene between microheater and sensor, showing a kink in the heat flux where the nanomesh begins." loading="lazy">
+      <figcaption class="figure-cap">Nanomeshed graphene : the flux visibly drops where the nanomesh begins.</figcaption>
+    </figure>
+  </div>
+  <h4 class="fab-panel-title" style="margin:36px 0 14px;">Results</h4>
+  
+  <figure class="figure" style="max-width:500px; margin-left:auto; margin-right:auto;">
+    <img src="../assets/statistique.PNG" alt="Scatter plot of rectification ratio across device types: hBN/graphene nanomesh at 35 nm and 70 nm pore spacing, versus SiO2, reshaped hBN, hBN-only and hBN/graphene control devices." loading="lazy">
+    <figcaption class="figure-cap">Rectification ratio across device types : the nanomesh (w ≈ 35 nm) is the clear outlier, well above every symmetric control</figcaption>
+  </figure>
+  <p class="desc" style="margin-top:26px;">The measurements confirm it: heat conducts differently depending on the heating direction. Symmetric control devices  (bare substrate, hBN-only, pristine graphene) showed only 4–10% asymmetry, essentially fabrication noise. Add the nanomesh and the thermal rectification reaches visibly high values up to 57%.</p>
+
+  <div class="stat-strip">
+    <span class="stat"><b>57%</b> thermal rectification : best device (35 nm pore spacing)</span>
+    <span class="stat">vs. only <b>4–10%</b> on symmetric control devices</span>
+    <span class="stat"><b>36</b> devices fabricated, fully independently</span>
+    <span class="stat"><b>6-stage</b> nanofabrication process per device</span>
+  </div>
+  <div class="chips">
+    <span class="chip">EBL</span><span class="chip">metal deposition</span><span class="chip">2D exfoliation &amp; transfer</span><span class="chip">AFM</span><span class="chip">selective RIE</span><span class="chip">graphene nanomeshing</span><span class="chip">COMSOL electrothermal modelling</span><span class="chip">temperature-dependent electrical measurement</span>
+  </div>
+
+  </div>
+
+  <a class="back-link" href="../index.html" style="margin-bottom:60px;">← Back to all projects</a>
+
+</div>
+
+ 
+
+<script>
+(function(){
+  document.querySelectorAll('.fab-stepper').forEach(function(stepper){
+    var tabs = stepper.querySelectorAll('.fab-tab');
+    var panels = stepper.querySelectorAll('.fab-panel');
+    tabs.forEach(function(tab){
+      tab.addEventListener('click', function(){
+        var step = tab.getAttribute('data-step');
+        tabs.forEach(function(t){ t.classList.toggle('active', t === tab); });
+        panels.forEach(function(p){ p.classList.toggle('active', p.getAttribute('data-step') === step); });
+      });
+    });
+  });
+
+  document.querySelectorAll('.fab-carousel').forEach(function(carousel){
+    var slides = carousel.querySelectorAll('.fab-carousel-slide');
+    var counter = carousel.querySelector('.fab-carousel-counter');
+    var prevBtn = carousel.querySelector('.fab-carousel-arrow.prev');
+    var nextBtn = carousel.querySelector('.fab-carousel-arrow.next');
+    var index = 0;
+    function render(){
+      slides.forEach(function(s, i){ s.classList.toggle('active', i === index); });
+      if (counter) counter.textContent = (index + 1) + ' / ' + slides.length;
+    }
+    prevBtn.addEventListener('click', function(){
+      index = (index - 1 + slides.length) % slides.length;
+      render();
+    });
+    nextBtn.addEventListener('click', function(){
+      index = (index + 1) % slides.length;
+      render();
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
