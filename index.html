@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ichrak Mansouri — Portfolio</title>
+<meta name="description" content="Personal portfolio — nanofabrication, photonics and optical engineering projects.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="wrap">
+
+  <header class="header-flex">
+    <div class="header-text">
+      <div class="kicker"><span class="dot"></span><span class="eyebrow">Portfolio</span></div>
+      <h1 class="name">Ichrak Mansouri</h1>
+      <p class="role-line">Nanofabrication, Photonics &amp; Optics Engineering student | Cleanroom Process, Optical Design and Multiphysics Modelling, from Institut d'Optique Graduate School and Université Paris-Saclay.</p>
+      <div class="meta-row">
+        <span>Paris / Palaiseau, France</span>
+        <a href="mailto:ichrak.mansouri.iogs@gmail.com">ichrak.mansouri.iogs@gmail.com</a>
+      </div>
+    </div>
+      
+    <div class="portrait">
+     <img src="assets/Professional picture.png" alt="Portrait of Ichrak Mansouri">
+    </div>
+  </header>
+  <p class="intro">I build and characterize devices at the intersection of nanofabrication, photonics and semiconductor physics, from cleanroom process work on two-dimensional materials to optical system design and electrothermal modelling. The five projects below range from independent device fabrication at a CNRS laboratory and an industrial R&amp;D internship at HORIBA, through a from-scratch optical design study and an automated cold-atom experiment, to a statistical-mechanics simulation of a frustrated magnetic system.</p>
+
+  <section id="projects">
+    <span class="eyebrow">Projects</span>
+
+    <div class="project-grid">
+
+      <a class="project-tile" href="projects/mpq.html">
+        <div class="tile-img-wrap">
+          <img src="assets/mpq-device-3Dschematic.png" alt="Schematic of the graphene/hBN device." loading="lazy">
+        </div>
+        <div class="tile-body">
+          <span class="tile-num">01 — CNRS RESEARCH INTERNSHIP</span>
+          <span class="tile-title">Supported-Graphene Nanoscale Thermal Rectifiers</span>
+          <span class="tile-org">MPQ Laboratory, CNRS / Université Paris Cité</span>
+          <p class="tile-desc">Independently fabricated 36 graphene/hBN devices and proposed a new conductance-based definition of thermal rectification for supported 2D materials.</p>
+          <span class="tile-date mono">MAR 2026 – AUG 2026</span>
+          <span class="tile-cta">View project <span class="arrow">→</span></span>
+        </div>
+      </a>
+
+      <a class="project-tile" href="projects/horiba.html">
+        <div class="tile-img-wrap">
+          <img src="assets/horiba.png" alt="Diagram of two-beam holographic recording of a variable line spacing grating." loading="lazy">
+        </div>
+        <div class="tile-body">
+          <span class="tile-num">02 — INDUSTRIAL R&amp;D INTERNSHIP</span>
+          <span class="tile-title">Optimization of Holographic Recording for VLS Gratings</span>
+          <span class="tile-org">HORIBA France</span>
+          <p class="tile-desc">Built and fully rewrote in Python an optimization tool matching recorded grating line density to a target polynomial law, across 18 interdependent parameters.</p>
+          <span class="tile-date mono">MAY 2025 – AUG 2025</span>
+          <span class="tile-cta">View project <span class="arrow">→</span></span>
+        </div>
+      </a>
+
+      <a class="project-tile" href="projects/zemax.html">
+        <div class="tile-img-wrap">
+          <img src="assets/newton.PNG" alt="3D ray-trace diagram of the Newtonian telescope design." loading="lazy">
+        </div>
+        <div class="tile-body">
+          <span class="tile-num">03 — OPTICAL DESIGN PROJECT</span>
+          <span class="tile-title">Comparative Design of Five Reflective Telescopes</span>
+          <span class="tile-org">Zemax OpticStudio</span>
+          <p class="tile-desc">Designed and compared five reflective telescope architectures under a shared cahier des charges, down to ~8 µm coma on the Newton design.</p>
+          <span class="tile-date mono">MAR 2025 – MAY 2025</span>
+          <span class="tile-cta">View project <span class="arrow">→</span></span>
+        </div>
+      </a>
+
+      <a class="project-tile" href="projects/cold-atoms.html">
+        <div class="tile-img-wrap">
+          <img src="assets/cold atoms tof synthetic.png" alt="Photo of the finished optical table for the cold-atom experiment." loading="lazy">
+        </div>
+        <div class="tile-body">
+          <span class="tile-num">04 — Research PROJECT</span>
+          <span class="tile-title">Automated Characterization of a Cloud of Cold Rubidium Atoms</span>
+          <span class="tile-org">Institut d'Optique</span>
+          <p class="tile-desc">Rebuilt a cold rubidium cloud after a hardware failure, then automated its time-of-flight characterization with a custom Arduino + Python pipeline.</p>
+          <span class="tile-date mono">2024 – 2025</span>
+          <span class="tile-cta">View project <span class="arrow">→</span></span>
+        </div>
+      </a>
+
+      <a class="project-tile" href="projects/ising.html">
+        <div class="tile-img-wrap">
+          <img src="assets/Ising ground state.png" alt="Hexagonal lattice topology showing a spin and its six nearest neighbors." loading="lazy">
+        </div>
+        <div class="tile-body">
+          <span class="tile-num">05 — NUMERICAL SIMULATION PROJECT</span>
+          <span class="tile-title">Hexagonal 2D Ising Model: Antiferromagnetic Frustration</span>
+          <span class="tile-org">Université Paris-Saclay</span>
+          <p class="tile-desc">Built a Monte Carlo (Metropolis) simulation showing how geometric frustration on a hexagonal lattice erases the sharp phase transition seen on a square lattice.</p>
+          <span class="tile-date mono">2025 – 2026</span>
+          <span class="tile-cta">View project <span class="arrow">→</span></span>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <section id="toolkit">
+    <span class="eyebrow">Technical toolkit</span>
+
+    <div class="toolkit-group">
+      <div class="toolkit-label">Nanofabrication &amp; characterization</div>
+      <div class="chips">
+        <span class="chip">UV Photolithography</span><span class="chip">EBL</span><span class="chip">Thermal Annealing</span><span class="chip">2D Material Transfer</span><span class="chip">AFM</span><span class="chip">SEM</span><span class="chip">Raman Spectroscopy</span><span class="chip">Thermal Transport Measurements</span>
+      </div>
+    </div>
+
+    <div class="toolkit-group">
+      <div class="toolkit-label">Optical design &amp; metrology</div>
+      <div class="chips">
+        <span class="chip">Zemax OpticStudio</span><span class="chip">Ray Tracing</span><span class="chip">Aberration Analysis</span><span class="chip">Interferometry</span><span class="chip">Wavefront Sensing</span><span class="chip">Tolerancing</span>
+      </div>
+    </div>
+
+    <div class="toolkit-group">
+      <div class="toolkit-label">Lasers, polarization &amp; spectroscopy</div>
+      <div class="chips">
+        <span class="chip">Laser Alignment &amp; Beam Profiling</span><span class="chip">Nonlinear Optics</span><span class="chip">Polarization Control</span><span class="chip">Photodetector Calibration</span><span class="chip">Spectroscopy</span>
+      </div>
+    </div>
+
+    <div class="toolkit-group">
+      <div class="toolkit-label">Modelling, simulation &amp; programming</div>
+      <div class="chips">
+        <span class="chip">Python</span><span class="chip">Monte Carlo Simulation</span><span class="chip">COMSOL Multiphysics</span><span class="chip">MATLAB</span><span class="chip">C++</span><span class="chip">LabVIEW</span><span class="chip">Arduino</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <span class="eyebrow">Education</span>
+
+    <div class="edu-row">
+      <div>
+        <div class="edu-school">Institut d'Optique Graduate School (IOGS)</div>
+        <div class="edu-detail">Engineering degree in optical engineering</div>
+      </div>
+      <div class="edu-date">2023 – 2026</div>
+    </div>
+    <div class="edu-row">
+      <div>
+        <div class="edu-school">Université Paris-Saclay</div>
+        <div class="edu-detail">M2, Quantum, Light, Materials and Nanosciences — track: condensed matter and its interfaces</div>
+      </div>
+      <div class="edu-date">2025 – 2026</div>
+    </div>
+    <div class="edu-row">
+      <div>
+        <div class="edu-school">IPEST, Tunisia</div>
+        <div class="edu-detail">Preparatory classes in mathematics and physics</div>
+      </div>
+      <div class="edu-date">2021 – 2023</div>
+    </div>
+    <div class="edu-row">
+      <div>
+        <div class="edu-school">Tunisian Baccalaureate, Mathematics</div>
+        <div class="edu-detail">Ranked 1st regionally, 30th nationally</div>
+      </div>
+      <div class="edu-date">2021</div>
+    </div>
+
+    <div class="lang-row">
+      <div class="lang"><b>Arabic</b>Native</div>
+      <div class="lang"><b>French</b>Fluent</div>
+      <div class="lang"><b>English</b>Fluent</div>
+      <div class="lang"><b>Japanese</b>A2</div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="mono">GET IN TOUCH</div>
+    <p style="margin-top:8px;">Reachable by email at <a href="mailto:ichrak.mansouri.iogs@gmail.com">ichrak.mansouri.iogs@gmail.com</a> or on <a href="https://www.linkedin.com/in/ichrak-mansouri-b5130b292" target="_blank" rel="noopener">LinkedIn</a>, based in Paris / Palaiseau, France.</p>
+  </footer>
+
+</div>
+
+</body>
+</html>
